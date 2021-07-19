@@ -34,13 +34,11 @@ const d = {
 
 function compareObj(obj1, obj2) {
     for (let key1 in obj1) {
-        for (let key2 in obj2) {
-            if (obj1[key1] != obj2[key2]) {
+            if (obj1[key1] !== obj2[key1]) {
                 return false;
             }
             return true;
         }
-    }
 }
 console.log(compareObj(a, b));
 console.log(compareObj(c, d));
